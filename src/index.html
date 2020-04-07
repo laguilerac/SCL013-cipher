@@ -12,20 +12,22 @@
     </header>
     <section>
         <p>Selecciona la clave de tu mensaje secreto (con cuántos números lo vas a ocultar)</p>
-        <input type="number">
+        <input type="number" id="desplazar">
     </section>
     <section>
-        <p>Acá puedes escribir tu mensaje</p>
-        <textarea name="" id="" cols="60" rows="10"></textarea>
+        <p>Escribe tu mensaje</p>
+        <textarea id="enterText" cols="60" rows="10"></textarea>
     </section>
     <section>
-        <button id="cifrar">Ocultar mensaje</button>
+        <button id="cifrar">Encriptar mensaje</button>
         <button id="descifrar">Descubrir mensaje</button>
     </section>
     <section>
-        <p>Acá puedes ver tu mensaje oculto</p>
-        <textarea name="" id="" cols="60" rows="10"></textarea>
+        <p>Tu mensaje oculto es:</p>
+        <textarea id="showText" cols="60" rows="10"></textarea>
     </section>
-    <script src="index.js" type="module"></script>
- </body>
+    <br>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+</body>
 </html>

@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient( lightblue,blue);
+     width: 500px;
+     margin: 0 auto;
+   
+    }
+ h1{
+      font-size: 6em;
+      font-family: "ink free"; 
+      text-align: center;
+      }
+    
+h2{
+      font-size: 1,5em;
+      font-family: "Comic San ms",cursive;
+       text-align:center;
+    }
+    
+ p{
+      font-family:"MV Boli";
+      }
+
+.centrado{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}   
+     
+    

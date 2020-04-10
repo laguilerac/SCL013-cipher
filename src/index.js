@@ -1,11 +1,9 @@
 import cipher from '../src/cipher.js';
 console.log(cipher);
-
 window.onload = function(){ 
     let encodeButton = document.getElementById("cifrar");
     let decodeButton = document.getElementById("descifrar");
     let cleanButton = document.getElementById("erasure");
-    
     encodeButton.addEventListener("click", function(){
         let nbr = parseInt(document.getElementById("desplazar").value);
         let message = document.getElementById("enterText").value.toUpperCase();
@@ -27,4 +25,3 @@ window.onload = function(){
         boxDecode.value = "";
     });
 }
-

@@ -1,5 +1,5 @@
 import cipher from '../src/cipher.js';
-console.log(cipher);
+//console.log(cipher);
 window.onload = function(){ 
     let encodeButton = document.getElementById("cifrar");
     let decodeButton = document.getElementById("descifrar");
@@ -16,7 +16,7 @@ window.onload = function(){
         let message = document.getElementById("enterText").value.toUpperCase();
         let boxDecode = document.getElementById("showText");
         let mensajeDescifrado = cipher.decode(nbr, message);
-        console.log(mensajeDescifrado);
+        //console.log(mensajeDescifrado);
         boxDecode.value = mensajeDescifrado;
     });
     cleanButton.addEventListener("click", function(){

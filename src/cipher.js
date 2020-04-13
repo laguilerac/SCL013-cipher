@@ -1,5 +1,5 @@
 const cipher = {
-    encode(offset, text) {
+    encode: (offset, text) =>{
         let mensajeCifrado = "";
         for (let i=0; i < text.length; i++){
             let ascii= text.charCodeAt(i);
@@ -8,7 +8,7 @@ const cipher = {
         }
         return mensajeCifrado;
     },
-    decode(offset, text) {
+    decode: (offset, text) =>{
         let mensajeDescifrado = "";
         for (let i=0; i<text.length; i++){
             let ascii= text.charCodeAt(i);

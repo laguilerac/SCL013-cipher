@@ -2,7 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caesar Cipher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,22 +16,23 @@
     <p>Selecciona la clave de tu mensaje secreto (con cuántos números lo vas a ocultar)</p>
     <input type="number" id="desplazar">
   </section>
-  <section>
-    <p>Escribe tu mensaje</p>
-    <textarea id="enterText" cols="60" rows="10"></textarea>
+  <section class="bloque">
+    <div>
+      <p>Escribe tu mensaje</p>
+      <textarea id="enterText" cols="60" rows="10"></textarea>
+    </div>
+    <div>
+      <button id="cifrar">Encriptar mensaje</button>
+      <button id="descifrar">Descubrir mensaje</button>
+    </div>
   </section>
-  <section>
-    <button id="cifrar">Encriptar mensaje</button>
-    <button id="descifrar">Descubrir mensaje</button>
-  </section>
-  <section>
+  <section class="bloque">
     <p>Tu mensaje oculto es:</p>
     <textarea id="showText" cols="60" rows="10"></textarea>
+    <div>
+      <button id="erasure">Hazlo de nuevo</button>
+    </div>
   </section>
-  <section>
-    <button id="erasure">Ingresar otro mensaje</button>
-  </section>
-  <br>
   <script type="module" src="cipher.js"></script>
   <script type="module" src="index.js"></script>
 </body>
